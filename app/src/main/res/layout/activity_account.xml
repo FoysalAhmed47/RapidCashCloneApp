@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountActivity">
+
+    <RelativeLayout
+        android:id="@+id/title_page_Account"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="#ffff"
+        android:elevation="2dp"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+        android:id="@+id/image_back_accunt"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="7dp"
+        android:src="@drawable/ic_back"
+        android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/RAPID_CASH"
+            android:text="RAPIDCASH"
+            android:textColor="#131212"
+            android:textSize="15.5dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed-light"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="11dp" />
+
+        <ImageView
+            android:id="@+id/image_help_account"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_net"
+            tools:ignore="RtlCompat" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/circleimg_phone_layout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/account_background"
+        android:layout_below="@+id/title_page_Account">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="82dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/logo"
+            app:civ_border_color="#DBC81A"
+            app:civ_border_width="1dp"
+            android:elevation="5dp"
+            />
+
+        <TextView
+            android:id="@+id/login_account_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01816771847"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:layout_marginTop="25dp"
+            android:textColor="#ffff"
+            android:textStyle="bold"
+            android:layout_below="@+id/profile_image"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:id="@+id/scroll_view_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:scrollbars="none"
+        android:layout_marginBottom="2dp"
+        android:layout_below="@id/circleimg_phone_layout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/scroll_view_id">
+
+            <ImageView
+                android:id="@+id/repayment_image_account"
+                android:layout_width="20dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/creditcard"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/repayment_text_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Repayment"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="7dp"
+                android:fontFamily="sans-serif-condensed-light" />
+
+            <ImageView
+                android:id="@+id/repayment_forword"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="2dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/account_forward_icon"
+                android:layout_alignParentRight="true" />
+            <View
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="6dp"
+                android:layout_below="@id/repayment_text_account"
+                android:background="#ADB1B1" />
+
+
+            <ImageView
+                android:id="@+id/loanrecord_image_account"
+                android:layout_width="20dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_below="@+id/repayment_text_account"
+                android:src="@drawable/loanrecord"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/loanrecord_text_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LoanRecord"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/repayment_text_account"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="28dp"
+                android:fontFamily="sans-serif-condensed-light" />
+
+            <ImageView
+                android:id="@+id/loanrecord_forword"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="2dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/repayment_forword"
+                android:src="@drawable/account_forward_icon"
+                android:layout_alignParentRight="true" />
+            <View
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="2dp"
+                android:layout_below="@id/loanrecord_image_account"
+                android:background="#ADB1B1" />
+
+
+            <ImageView
+                android:id="@+id/coupon_image_account"
+                android:layout_width="20dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_below="@+id/loanrecord_image_account"
+                android:src="@drawable/coupon"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/coupon_text_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Coupon"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/loanrecord_text_account"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="35dp"
+                android:fontFamily="sans-serif-condensed-light" />
+
+            <ImageView
+                android:id="@+id/coupon_forword"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="2dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/loanrecord_forword"
+                android:src="@drawable/account_forward_icon"
+                android:layout_alignParentRight="true" />
+            <View
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="2dp"
+                android:layout_below="@id/coupon_text_account"
+                android:background="#ADB1B1" />
+
+            <ImageView
+                android:id="@+id/message_image_account"
+                android:layout_width="20dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="25dp"
+                android:layout_below="@+id/coupon_image_account"
+                android:src="@drawable/imail_account"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/message_text_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Message"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/coupon_text_account"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="sans-serif-condensed-light" />
+
+            <ImageView
+                android:id="@+id/meaasge_forword"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="2dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/coupon_forword"
+                android:src="@drawable/account_forward_icon"
+                android:layout_alignParentRight="true" />
+            <View
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="2dp"
+                android:layout_below="@id/message_text_account"
+                android:background="#ADB1B1" />
+
+
+            <ImageView
+                android:id="@+id/share_image_account"
+                android:layout_width="20dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="25dp"
+                android:layout_below="@+id/message_image_account"
+                android:src="@drawable/ic_share"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/share_text_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Share"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/message_image_account"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="26.5dp"
+                android:fontFamily="sans-serif-condensed-light" />
+
+            <ImageView
+                android:id="@+id/share_forword"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="2dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="16dp"
+                android:layout_below="@+id/meaasge_forword"
+                android:src="@drawable/account_forward_icon"
+                android:layout_alignParentRight="true" />
+            <View
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="3dp"
+                android:layout_below="@id/share_text_account"
+                android:background="#ADB1B1" />
+
+            <ImageView
+                android:id="@+id/contact_image_account"
+                android:layout_width="20dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="25dp"
+                android:layout_below="@+id/share_image_account"
+                android:src="@drawable/ic_dcontract"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/contact_text_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact Principle"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/share_text_account"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="31dp"
+                android:fontFamily="sans-serif-condensed-light" />
+
+            <ImageView
+                android:id="@+id/contact_forword"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="2dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/share_forword"
+                android:src="@drawable/account_forward_icon"
+                android:layout_alignParentRight="true" />
+            <View
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="4dp"
+                android:layout_below="@id/contact_text_account"
+                android:background="#ADB1B1" />
+
+            <ImageView
+                android:id="@+id/onlinesrvs_image_account"
+                android:layout_width="20dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="25dp"
+                android:layout_below="@+id/contact_image_account"
+                android:src="@drawable/onlinesrvs"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/onlinesrvs_text_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Online Services"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/contact_text_account"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="31dp"
+                android:fontFamily="sans-serif-condensed-light" />
+
+            <ImageView
+                android:id="@+id/onlinesrvs_forword"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="2dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="11.5dp"
+                android:layout_below="@+id/contact_forword"
+                android:src="@drawable/account_forward_icon"
+                android:layout_alignParentRight="true" />
+            <View
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="4dp"
+                android:layout_below="@id/onlinesrvs_text_account"
+                android:background="#ADB1B1" />
+
+            <ImageView
+                android:id="@+id/objection_image_account"
+                android:layout_width="20dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="25dp"
+                android:layout_below="@+id/onlinesrvs_image_account"
+                android:src="@drawable/ic_objection"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/objection_text_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Objection"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/onlinesrvs_text_account"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="31dp"
+                android:fontFamily="sans-serif-condensed-light" />
+
+            <ImageView
+                android:id="@+id/objection_forword"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="2dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="11.5dp"
+                android:layout_below="@+id/onlinesrvs_forword"
+                android:src="@drawable/account_forward_icon"
+                android:layout_alignParentRight="true" />
+            <View
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="4dp"
+                android:layout_below="@id/objection_text_account"
+                android:background="#ADB1B1" />
+
+            <ImageView
+                android:id="@+id/intro_image_account"
+                android:layout_width="20dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="25dp"
+                android:layout_below="@+id/objection_image_account"
+                android:src="@drawable/ic_intro"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/intro_text_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Intro"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/objection_text_account"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="31dp"
+                android:fontFamily="sans-serif-condensed-light" />
+
+            <ImageView
+                android:id="@+id/intro_forword"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="2dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="11.5dp"
+                android:layout_below="@+id/objection_forword"
+                android:src="@drawable/account_forward_icon"
+                android:layout_alignParentRight="true" />
+            <View
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="4dp"
+                android:layout_below="@id/intro_text_account"
+                android:background="#ADB1B1" />
+
+            <ImageView
+                android:id="@+id/setting_image_account"
+                android:layout_width="20dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="25dp"
+                android:layout_below="@+id/intro_image_account"
+                android:src="@drawable/settings_account"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/setting_text_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/intro_text_account"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="31dp"
+                android:fontFamily="sans-serif-condensed-light" />
+
+            <ImageView
+                android:id="@+id/setting_forword"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="2dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="11.5dp"
+                android:layout_below="@+id/intro_forword"
+                android:src="@drawable/account_forward_icon"
+                android:layout_alignParentRight="true" />
+            <View
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="4dp"
+                android:layout_below="@id/setting_text_account"
+                android:background="#ADB1B1" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

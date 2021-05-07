@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_loan"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/title_page_start"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="#ffff"
+        android:elevation="2dp"
+        android:layout_alignParentTop="true">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/RAPID_CASH"
+            android:text="RAPIDCASH"
+            android:textColor="#131212"
+            android:textSize="15.5dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed-light"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp" />
+
+        <ImageView
+            android:id="@+id/frgmnt_help_loan"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_net"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/frg_loan_img"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_below="@id/title_page_start"
+        android:src="@drawable/share"
+        />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/loan_frgmnt_cardView"
+        android:layout_width="280dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="20dp"
+        app:cardElevation="3dp"
+        android:layout_marginTop="44dp"
+        android:layout_below="@+id/frg_loan_img"
+        app:cardCornerRadius="7dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="19sp"
+                android:textColor="#0F0F0F"
+                android:fontFamily="@font/zamyatin"
+                android:text="Tk 10000 highest amount"
+                />
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/txt1"
+                android:layout_marginTop="19sp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="7dp"
+                android:src="@drawable/ic_watch" />
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:textSize="11sp"
+                android:layout_marginTop="19sp"
+                android:layout_below="@id/txt1"
+                android:textColor="#0F0F0F"
+                android:fontFamily="sans-serif-condensed-light"
+                android:layout_marginLeft="35dp"
+                android:text="Money will provided within 24 hours"
+                />
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/txt1"
+                android:layout_marginTop="19sp"
+                android:layout_toRightOf="@id/txt2"
+                android:src="@drawable/ic_calendar" />
+
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:textSize="11sp"
+                android:layout_marginTop="19sp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/txt1"
+                android:textColor="#0F0F0F"
+                android:fontFamily="sans-serif-condensed-light"
+                android:layout_toRightOf="@id/img2"
+                android:text="Till 120 days" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/login_regtr_btn"
+        android:layout_width="166dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/buttons"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        android:layout_below="@id/loan_frgmnt_cardView"
+        android:fontFamily="sans-serif-condensed-light"
+        android:layout_marginLeft="83dp"
+        android:text="Register/Login"
+        android:textColor="#ffff"
+        />
+
+</RelativeLayout>

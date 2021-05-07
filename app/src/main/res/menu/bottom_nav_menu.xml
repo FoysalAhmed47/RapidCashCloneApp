@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_loan"
+        android:icon="@drawable/ic_loan"
+        android:title="Loan" />
+
+    <item
+        android:id="@+id/navigation_witness"
+        android:icon="@drawable/ic_witness"
+        android:title="Witness" />
+
+    <item
+        android:id="@+id/navigation_account"
+        android:icon="@drawable/ic_account"
+        android:title="Profile" />
+
+</menu>

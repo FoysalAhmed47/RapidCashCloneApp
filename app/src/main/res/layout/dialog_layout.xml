@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:padding="20dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="370dp"
+        android:layout_height="230dp"
+        android:background="#ffff"
+        app:cardCornerRadius="6dp"
+        >
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <ImageView
+               android:id="@+id/dialog_img"
+               android:layout_width="match_parent"
+               android:layout_height="130dp"
+               android:src="@drawable/bb"
+               android:layout_marginTop="8dp"
+               />
+           <TextView
+               android:id="@+id/dialog_txt"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="9dp"
+                android:layout_below="@+id/dialog_img"
+               android:layout_centerInParent="true"
+               android:fontFamily="sans-serif-condensed-light"
+                android:text="picture should be clear and complete"
+               />
+
+           <Button
+               android:id="@+id/confirm_picture_btn"
+               android:layout_width="166dp"
+               android:layout_height="43dp"
+               android:background="@drawable/buttons"
+               android:textAllCaps="false"
+               android:textSize="14sp"
+               android:layout_below="@+id/dialog_txt"
+               android:layout_marginTop="17dp"
+               android:layout_centerHorizontal="true"
+               android:fontFamily="sans-serif-condensed-light"
+               android:text="Confirm Photo"
+               android:layout_marginBottom="8dp"
+               android:textColor="#ffff"
+               />
+       </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

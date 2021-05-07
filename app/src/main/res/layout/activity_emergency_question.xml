@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmergencyQuestion">
+
+    <RelativeLayout
+        android:id="@+id/title_page_coupon"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="#ffff"
+        android:elevation="2dp"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/title_image_back_emrgqus"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="7dp"
+            android:src="@drawable/ic_back"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/RAPID_CASH"
+            android:text="Emergency Question"
+            android:textColor="#131212"
+            android:textSize="15.5dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed-light"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp" />
+
+        <ImageView
+            android:id="@+id/titleimg_help_emrgqus"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/refresh"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:id="@+id/scroll_view_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:scrollbars="none"
+        android:layout_marginBottom="2dp"
+        android:layout_below="@id/title_page_coupon">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/scroll_view_id">
+
+
+            <ImageView
+                android:id="@+id/emg_qusimg_id"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/bb"
+                />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_id1"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:elevation="50dp"
+                app:cardCornerRadius="30dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/emg_qusimg_id">
+
+                   <Button
+                       android:id="@+id/RCH_1btn"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:background="@drawable/emrgqus_btn_design"
+                       android:textAllCaps="false"
+                       android:layout_toRightOf="@+id/img_nmbr1"
+                       android:textSize="12sp"
+                       android:textStyle="bold"
+                       android:fontFamily="sans-serif-condensed-light"
+                       android:text="What is Rapidcash?"
+                       android:textColor="#666262" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_id2"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:elevation="50dp"
+                app:cardCornerRadius="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/card_id1">
+
+                <Button
+                    android:id="@+id/RCH_2btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/emrgqus_btn_design"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="what's the process of Rapidcash?"
+                    android:textColor="#666262" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+            android:id="@+id/card_id3"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:elevation="50dp"
+            app:cardCornerRadius="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/card_id2">
+
+            <Button
+                android:id="@+id/RCH_3btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/emrgqus_btn_design"
+                android:textAllCaps="false"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="how to repayment loan?"
+                android:textColor="#666262" />
+        </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_id4"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:elevation="50dp"
+                app:cardCornerRadius="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/card_id3">
+
+                <Button
+                    android:id="@+id/RCH_4btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/emrgqus_btn_design"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="How much money can be borrowed?"
+                    android:textColor="#666262" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_id5"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:elevation="50dp"
+                app:cardCornerRadius="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/card_id4">
+
+                <Button
+                    android:id="@+id/RCH_5btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/emrgqus_btn_design"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="If do not have a national identity card, can i apply for a loan with another certificate?"
+                    android:textColor="#666262" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_id6"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:elevation="50dp"
+                app:cardCornerRadius="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/card_id5">
+
+                <Button
+                    android:id="@+id/RCH_6btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/emrgqus_btn_design"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="How long will it take to get a loan?"
+                    android:textColor="#666262" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_id7"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:elevation="50dp"
+                app:cardCornerRadius="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/card_id6">
+
+                <Button
+                    android:id="@+id/RCH_7btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/emrgqus_btn_design"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="Why the loan application has been rejected?"
+                    android:textColor="#666262" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_id8"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:elevation="50dp"
+                app:cardCornerRadius="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/card_id7">
+
+                <Button
+                    android:id="@+id/RCH_8btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/emrgqus_btn_design"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="The system has not been updated since payment?"
+                    android:textColor="#666262" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_id9"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:elevation="50dp"
+                app:cardCornerRadius="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/card_id8">
+
+                <Button
+                    android:id="@+id/RCH_9btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/emrgqus_btn_design"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="How to cancel a loan application?"
+                    android:textColor="#666262" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_id10"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:elevation="50dp"
+                app:cardCornerRadius="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/card_id9">
+
+                <Button
+                    android:id="@+id/RCH_10btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/emrgqus_btn_design"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="Why processing fee is charged?"
+                    android:textColor="#666262" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_id11"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:elevation="50dp"
+                android:layout_marginBottom="5dp"
+                app:cardCornerRadius="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/card_id10">
+
+                <Button
+                    android:id="@+id/RCH_11btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/emrgqus_btn_design"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="Is my information protected by Rapidcash?"
+                    android:textColor="#666262"
+                    />
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

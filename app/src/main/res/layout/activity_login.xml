@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:id="@+id/title_page_PInformation"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="#ffff"
+        android:elevation="2dp"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/back_image_login"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="7dp"
+            android:src="@drawable/ic_back"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/RAPID_CASH"
+            android:text="Login"
+            android:textColor="#131212"
+            android:textSize="15.5dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed-light"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="11dp" />
+
+        <ImageView
+            android:id="@+id/title_image_help"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_net"
+            tools:ignore="RtlCompat" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/RC_id"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logo"
+        android:layout_centerInParent="true"
+       android:layout_below="@id/title_page_PInformation"/>
+
+    <TextView
+        android:id="@+id/title_rapidcash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RAPIDCASH"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:fontFamily="@font/zamyatin"
+        />
+
+    <EditText
+        android:id="@+id/login_phone_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/title_rapidcash"
+        android:background="@drawable/input_design"
+        android:padding="16dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="e.g  0123456778"
+        android:inputType="phone"
+        android:textSize="13sp"
+        android:fontFamily="sans-serif-condensed-light" />
+
+    <EditText
+        android:id="@+id/login_pass_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/login_phone_input"
+        android:background="@drawable/input_design"
+        android:padding="16dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="15dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="13sp"
+        android:fontFamily="sans-serif-condensed-light" />
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/login_pass_input"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/nextbtn"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        android:text="Login"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textColor="@android:color/white"
+        />
+
+    <TextView
+        android:id="@+id/forget_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forget Password?"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/login_btn"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="13dp"
+        android:fontFamily="sans-serif-condensed-light"
+        />
+
+    <TextView
+        android:id="@+id/login_text"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="115dp"
+        android:layout_marginTop="10dp"
+        android:text="Don't have an account?Register"
+        android:layout_below="@id/forget_pass"
+        android:textSize="13dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textColor="#137FD6"
+        />
+
+    <ImageView
+        android:id="@+id/login_txt_go"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/login_text"
+        android:layout_below="@+id/forget_pass"
+        android:src="@drawable/ic_forward" />
+
+</RelativeLayout>

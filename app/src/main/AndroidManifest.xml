@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.testproject">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".AllAccountJava.SettingsActivity" />
+        <activity android:name=".AllAccountJava.IntroActivity" />
+        <activity android:name=".AllAccountJava.ObjectionActivity" />
+        <activity android:name=".AllAccountJava.AgrrmentActivity" />
+        <activity android:name=".AllAccountJava.MessageActivity" />
+        <activity android:name=".AllAccountJava.LoanRecordActivity" />
+        <activity android:name=".AllAccountJava.RepaymentActivity" />
+        <activity android:name=".StartActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".AccountActivity" />
+        <activity android:name=".WitnessActivity" />
+        <activity android:name=".ShareActivity" />
+        <activity android:name=".EmergencyQuestion" />
+        <activity android:name=".OnlineServiceActivity" />
+        <activity android:name=".NIDInformationActivity" />
+        <activity android:name=".DescriptionInformationActivity" />
+        <activity android:name=".EmergencyInformation" />
+        <activity android:name=".WorkInformation" />
+        <activity android:name=".PInformationActivity" />
+        <activity android:name=".CouponActivity" />
+        <activity android:name=".LoanActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

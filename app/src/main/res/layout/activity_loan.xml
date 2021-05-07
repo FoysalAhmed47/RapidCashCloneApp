@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoanActivity">
+
+    <RelativeLayout
+        android:id="@+id/title_page_register"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="#ffff"
+        android:elevation="2dp"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/title_image_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="7dp"
+            android:src="@drawable/ic_back"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/RAPID_CASH"
+            android:text="Loan"
+            android:textColor="#131212"
+            android:textSize="15.5dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed-light"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp" />
+
+        <ImageView
+            android:id="@+id/title_image_help"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_net" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/login_text"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="9.5dp"
+        android:text="@string/loandtls"
+        android:layout_below="@id/title_page_register"
+        android:textSize="13.5dp"
+        android:textStyle="normal"
+        />
+
+    <TextView
+        android:id="@+id/loan_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9.5dp"
+        android:text="Loan Amount"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/login_text"
+        android:textSize="17dp"
+        android:fontFamily="@font/zamyatin"
+        />
+
+    <RelativeLayout
+        android:id="@+id/loan_layout1"
+        android:layout_width="340dp"
+        android:layout_height="140dp"
+        android:layout_below="@+id/loan_txt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp">
+
+        <Button
+            android:id="@+id/loan_txt1"
+            android:layout_width="125dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="9.5dp"
+            android:text="tk 3,000"
+            android:background="@drawable/input_design"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:padding="15dp"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="28dp"
+            android:fontFamily="sans-serif-condensed-light" />
+
+        <Button
+            android:id="@+id/loan_txt2"
+            android:layout_width="125dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="9.5dp"
+            android:text="tk 5,000"
+            android:padding="15dp"
+            android:paddingLeft="10dp"
+            android:layout_toRightOf="@+id/loan_txt1"
+            android:background="@drawable/input_design"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="sans-serif-condensed-light" />
+
+
+        <Button
+            android:id="@+id/loan_txt3"
+            android:layout_width="125dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="9.5dp"
+            android:text="tk 7,000"
+            android:layout_below="@id/loan_txt1"
+            android:background="@drawable/input_design"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:padding="15dp"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="28dp"
+            android:fontFamily="sans-serif-condensed-light" />
+        <Button
+            android:id="@+id/loan_txt4"
+            android:layout_width="125dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="9.5dp"
+            android:text="tk 10,000"
+            android:padding="15dp"
+            android:paddingLeft="10dp"
+            android:layout_toRightOf="@+id/loan_txt3"
+            android:background="@drawable/input_design"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:enabled="true"
+            android:layout_below="@id/loan_txt1"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="sans-serif-condensed-light" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/loan_condition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9.5dp"
+        android:text="Loan Condition"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/loan_layout1"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/zamyatin"
+        />
+    <RelativeLayout
+        android:id="@+id/loan_layout2"
+        android:layout_width="340dp"
+        android:layout_height="140dp"
+        android:layout_below="@+id/loan_condition"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp">
+
+        <Button
+            android:id="@+id/loan_txt5"
+            android:layout_width="125dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="9.5dp"
+            android:text="91 Days"
+            android:background="@drawable/input_design"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:padding="15dp"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="28dp"
+            android:fontFamily="sans-serif-condensed-light" />
+
+        <Button
+            android:id="@+id/loan_txt6"
+            android:layout_width="125dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="9.5dp"
+            android:text="100 Days"
+            android:padding="15dp"
+            android:paddingLeft="10dp"
+            android:layout_toRightOf="@+id/loan_txt5"
+            android:background="@drawable/input_design"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="sans-serif-condensed-light" />
+
+
+        <Button
+            android:id="@+id/loan_txt7"
+            android:layout_width="125dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="9.5dp"
+            android:text="110 Days"
+            android:layout_below="@id/loan_txt5"
+            android:background="@drawable/input_design"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:padding="15dp"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="28dp"
+            android:fontFamily="sans-serif-condensed-light" />
+        <Button
+            android:id="@+id/loan_txt8"
+            android:layout_width="125dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="9.5dp"
+            android:text="120 Days"
+            android:padding="15dp"
+            android:paddingLeft="10dp"
+            android:layout_toRightOf="@+id/loan_txt7"
+            android:background="@drawable/input_design"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_below="@id/loan_txt5"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="sans-serif-condensed-light" />
+    </RelativeLayout>
+
+<RelativeLayout
+    android:id="@+id/coupon_layout_id"
+    android:layout_width="370dp"
+    android:layout_height="40dp"
+    android:layout_below="@+id/loan_layout2"
+    android:layout_marginTop="15dp"
+    android:elevation="3dp"
+    android:layout_centerHorizontal="true">
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="27dp"
+        android:src="@drawable/ic_watch" />
+
+    <TextView
+        android:id="@+id/coupon_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="12sp"
+        android:textColor="#0F0F0F"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="54dp"
+        android:text="No Coupon Response Right Now " />
+
+</RelativeLayout>
+
+    <Button
+        android:id="@+id/loan_submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/nextbtn"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:text="Submit"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textColor="@android:color/white"
+        />
+
+</RelativeLayout>

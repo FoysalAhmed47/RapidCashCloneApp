@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/register_id"
+    android:background="#ffff">
+
+    <RelativeLayout
+        android:id="@+id/title_page_register"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="#ffff"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/register_title_image_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_back"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/RAPID_CASH"
+            android:text="REGISTRATION"
+            android:textColor="#131212"
+            android:textSize="15.5dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed-light"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="11dp" />
+
+        <ImageView
+            android:id="@+id/onlne_srvs_register"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_net"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:text="Write Your Phone Number Here"
+        android:layout_marginTop="27dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/title_page_register"
+        android:textColor="#2C2A2A"
+        android:textSize="18dp"
+        android:fontFamily="sans-serif-condensed-light" />
+
+
+    <TextView
+        android:id="@+id/loan"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="15dp"
+        android:text="Register Your Loan Account "
+        android:textColor="#333131"
+        android:layout_below="@id/phone"
+        android:textSize="14dp"
+        android:fontFamily="sans-serif-condensed-light" />
+
+    <EditText
+        android:id="@+id/register_phone_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/loan"
+        android:background="@drawable/input_design"
+        android:padding="16dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="e.g  0123456778"
+        android:inputType="phone"
+        android:textSize="13sp"
+        android:fontFamily="sans-serif-condensed-light" />
+
+    <Button
+        android:id="@+id/Next_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/register_phone_input"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/nextbtn"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        android:text="Next"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textColor="@android:color/white"
+        />
+
+    <com.rey.material.widget.CheckBox
+        android:id="@+id/agree_chkb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Next_btn"
+        android:layout_marginTop="10dp"
+        style="@style/ThemeOverlay.AppCompat.Dark"
+        android:text="Agree with RAPIDCASH service conditions and security principles"
+        android:textAllCaps="false"
+        app:cbd_strokeColor="#137FD6"
+        android:textColor="#524C4C"
+        android:gravity="center_vertical"
+        android:textSize="14sp"
+        android:fontFamily="@font/zamyatin"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/register_to_login"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="30dp"
+        android:text="Already have an account? Login"
+        android:layout_below="@id/agree_chkb"
+        android:textSize="13dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textColor="#137FD6"
+        />
+
+    <ImageView
+        android:id="@+id/login_txt_go"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="180dp"
+        android:layout_below="@+id/agree_chkb"
+        android:src="@drawable/ic_forward" />
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">TestProject</string>
+
+    <string name="submitlater"><u>Submit Later</u></string>
+    <string name="PInformationtxt">your name must have to matches with your NID name.
+    If you havent middle name then you can skip the middle name option.
+    </string>
+
+    <string name="text">ভালো ক্রেডিট এর স্কোর রাখলে এবং সময়মতো আমাদের লোন পরিশোধ করলে আপনার লোনের পরিমান বাড়িয়ে তুলতে পারেন।
+        আমাদের প্রায় ৯৫% ব্যবহারকারী রয়েছে যারা বর্ধিত লোনের পরিমান উপভোগ করছে।  </string>
+
+    <string name="loandtls">Let us know how much you want to borrow.
+    You can increase the amount of your loan by making good use of it and repaying the loan on time.
+        We have about 95% users who are enjoying increased loan amount.
+    </string>
+
+    <string-array name="method">
+        <item>বিকাশ</item>
+        <item>রকেট</item>
+        <item>নগদ</item>
+    </string-array>
+
+</resources>
